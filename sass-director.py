@@ -68,6 +68,7 @@ class Sassdirectorgenerate(sublime_plugin.WindowCommand):
                     print("Made directory:", directory)
                     print("Now at:", os.path.dirname(os.path.realpath(__file__)))
                 else:
+                    os.chdir(directory)
                     print("Directory already exists")
             # Navigate to endpoint via dir
             os.chdir(self.manifest_path)
