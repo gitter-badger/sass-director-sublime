@@ -4,7 +4,7 @@ import sublime
 import sublime_plugin
 
 
-class Generatesassstructure(sublime_plugin.WindowCommand):
+class Sassdirectorgenerate(sublime_plugin.WindowCommand):
     # Global Vars
     root_path = ""
     manifest_path = ""
