@@ -10,7 +10,7 @@ class Sassdirectorgenerate(sublime_plugin.WindowCommand):
     root_path = ""
     manifest_path = ""
     manifest_file = ""
-    prune_list = [';', '@import', '\'']
+    prune_list = [';', '@import', '\'', '\"']
 
     def defineRoot(self):
         """Function defineRoot
