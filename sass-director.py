@@ -1,6 +1,7 @@
 import os
 import re
 import sublime
+import platform
 import sublime_plugin
 
 
@@ -22,7 +23,11 @@ class Sassdirectorgenerate(sublime_plugin.WindowCommand):
         # Map Dirs + Files
         self.root_path = folders[0]
         self.manifest_file = view.file_name()
-        self.manifest_path = self.manifest_file[:self.manifest_file.rfind('\\')]
+        # Detect the OS
+        if(platform.system() is "Windows"):
+            self.manifest_path = self.manifest_file[:self.manifest_file.rfind('\\')]
+        else:
+            self.manifest_path = self.manifest_file[:self.manifest_file.rfind('/')]
 
     def pruneImport(self, line):
         """Function pruneImport
