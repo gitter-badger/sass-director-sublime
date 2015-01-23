@@ -1,4 +1,6 @@
 # sass-director-sublime
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Stephn-R/sass-director-sublime?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A port of Sass Director for Sublime
 
 Please visit the original Web Project by Una Kravet [HERE](https://github.com/una/sass-director)!
